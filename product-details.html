@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalProject</title>
+    <!--  Bootstrap cdn strat -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--  Bootstarp cdn end -->
+    <!--  Font-awesome cdn start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  Font-awesome cdn end -->
+    <!-- slick slider css start -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- slick slider css end -->
+    <!-- AOS css start cdn-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Aos css end cdn-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--  Modal start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="product-details">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="product-details-wrapper">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+                                                <div class="product-wrapper-img mb-5">
+                                                    <img style="width: 480px" src="assets/image/shop/bed_4.jpg" alt="">
+                                                </div>
+                                                <div class="product-mini-img d-flex">
+                                                    <div class="mini-img">
+                                                        <img src="/assets/image/chair/chair-5.jpg" style="width: 110px;"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="mini-img">
+                                                        <img src="/assets/image/chair/chair-4.jpg" style="width: 110px;"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="mini-img">
+                                                        <img src="/assets/image/shop/kreslo_3.jpg" style="width: 110px;"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <div class="product-details-title">
+                                                    <h3>Fashionable Bedspread</h3>
+                                                    <div class="sku mb-3">
+                                                        <span>
+                                                            SKU: N/A
+                                                        </span>
+                                                    </div>
+                                                    <div class="category mb-3">
+                                                        <span>
+                                                            Categories:
+                                                        </span>
+                                                        <a href="#">Featured</a>
+                                                        ,
+                                                        <a href="#">Chair</a>
+                                                    </div>
+                                                    <div class="review">
+                                                        <span class="rate">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </span>
+                                                        <a href="#">(3 customer reviews)</a>
+                                                    </div>
+                                                    <div class="desc">
+                                                        <span>About the product</span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitrquis justo
+                                                        tempus mollis sed et dui.
+                                                    </p>
+                                                    <div class="price mb-5">
+                                                        <span>
+                                                            $10,000.00
+                                                        </span>
+                                                    </div>
+                                                    <!-- <div class="stok mb-2">
+                                                        <span>6 in stock</span>
+                                                    </div> -->
+                                                    <div class="quantity mb-5">
+                                                        <div class="qty-input">
+                                                            <button class="qty-count qty-count--minus"
+                                                                data-action="minus" type="button">-</button>
+                                                            <input class="product-qty" type="number" name="product-qty"
+                                                                min="0" max="10" value="1">
+                                                            <button class="qty-count qty-count--add" data-action="add"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <a href="cart.html" class="btn btn-default">Add To Cart</a>
+                                                    </div>
+                                                    <div class="share-icon">
+                                                        <span class="feedback">
+                                                            The product is already in the wishlist!
+                                                            Browse Wishlist
+                                                        </span>
+                                                        <a href="wishlist.html">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Modal end -->
+    <!-- Header start -->
+    <header>
+        <div class="header">
+            <div class="headertop">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 logo">
+                            <a href="index.html">
+                                <img width="181" height="34" src="assets/image/logo/logo_furniture.jpg"
+                                    class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <form class="form1" action="">
+                                <div class="input-group">
+                                    <input type="search" class="form-control inp1" placeholder="Find your product">
+                                    <div class="input-group-btn search-button">
+                                        <input type="hidden" class="inp2" id="search-param">
+                                        <button type="submit" class="btn search-icon"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 g-3">
+                            <div class="icons">
+                                <ul type="button" class="btn btn-sm btn-light dropdown-toggle myaccount"
+                                    data-toggle="dropdown" aria-expanded="false">My Account
+                                    <li class="dropdown-menu-right myaccountlist" style="">
+                                        <a class="myaccountA" href="login.html">Sign in</a>
+                                        <a class="myaccountA" href="register.html">Sign up</a>
+                                    </li>
+                                </ul>
+                                <div class="canvasss">
+                                    <a href="wishlist.html" class="btn btn-close-white canvas-shopping">
+                                        <i class="fa-regular fa-heart">
+                                            <span>1</span>
+                                        </i>
+                                    </a>
+                                    <!-- <a href="cart.html" class="btn btn-close-white canvas-shopping"> -->
+                                    <!-- <i class="fa-solid fa-basket-shopping">
+                                            <span>0</span>
+                                        </i> -->
+                                    <button class="btn btn-close-white canvas-shopping" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-basket-shopping">
+                                            <span>0</span>
+                                        </i>
+                                    </button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="canvas-box">
+                                                <div class="canvas-item">
+                                                    <ul class="custom-ul">
+                                                        <li class="custom-li">
+                                                            <div class="canvas-image">
+                                                                <a href="product-details.html">
+                                                                    <img src="/assets/image/chair/chair-4.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="canvas-img-title">
+                                                                <h3 class="pro-text">
+                                                                    <a class="text"
+                                                                        href="product-details.html">Featuer</a>
+                                                                </h3>
+                                                                <p class="card-pro">
+                                                                    <span class="card-quantity">1 <b>×</b></span>
+                                                                    <span class="card-price2">$100.00</span>
+                                                                </p>
+                                                            </div>
+                                                            <button type="button" class="btn-xmark"
+                                                                data-bs-dismiss="offcanvas"
+                                                                aria-label="Close">X</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="canvas-price-box">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="sub-total">subtotal:</span>
+                                                            <span class="sub-total"><b>$300.00</b></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="minicart-button">
+                                                    <a href="cart.html">view cart</a>
+                                                    <a href="checkout.html">checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerbottom">
+                <div class="container-fluid">
+                    <div class="row align-items-center d-flex justify-content-start well">
+                        <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+                            <div class="logobottom">
+                                <nav class="menu-category">
+                                    <ul>
+                                        <li class="menu_cat">
+                                            <a href="#" class="accordion">
+                                                <i class="fa-solid fa-list"></i>
+                                                <span>All Categories</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="dropdown">
+                                                <li>
+                                                    <a href="index.html">Home 01</a>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html">Home 02</a>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html">Home 02</a>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-lg-block d-md-none d-sm-none">
+                            <div class="all-menu">
+                                <ul class="main-menu">
+                                    <li>
+                                        <a href="index.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li class="proL">
+                                        <a href="shop.html">
+                                            Shop
+                                            <i class="fa-solid fa-chevron-down menu-chevron"></i>
+                                        </a>
+                                        <ul class="pro-list">
+                                            <li><a href="product-details.html">Product details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+                            <div class="logoright ">
+                                <a class="menu-discount" href="#" rel="nofollow" class="btn ">
+                                    <strong>BLACK FRIDAY</strong>
+                                    <span>Get 45% Off! </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- Hamburger menu start -->
+    <div>
+        <section class="d-lg-none d-sm-block d-md-block">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="text-end d-md-block d-sm-block">
+                        <i id="menu" class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=" d-lg-none d-md-block d-sm-block" id="sidebar">
+                <span id="close">X</span>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="faq.html">FAQ</a>
+                <a href="">
+                    Shop
+                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
+                    <ul class="pro-list" id="shoppp" style="display: none;">
+                        <li>
+                            <a href="product-details.html">Product details</a>
+                        </li>
+                    </ul>
+                </a>
+                <a href="#">Contact</a>
+            </div>
+        </section>
+    </div>
+    <!-- Hamburger menu end -->
+
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main>
+        <section>
+            <div class="about">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-12 g-4">
+                            <div class="about-title">
+                                <span>
+                                    <a href="index.html">Home </a>
+                                </span>
+                                >
+                                <span> <a href="shop.html">Shop</a></span>
+                                >
+                                <span> Product details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="product-details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product-details-wrapper">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="product-wrapper-img mb-5">
+                                            <img src="assets/image/shop/bed_4.jpg" alt="">
+                                        </div>
+                                        <div class="product-mini-img d-flex" style="gap: 20px;">
+                                            <div class="mini-img">
+                                                <img src="/assets/image/chair/chair-5.jpg" style="width: 110px;" alt="">
+                                            </div>
+                                            <div class="mini-img">
+                                                <img src="/assets/image/chair/chair-4.jpg" style="width: 110px;" alt="">
+                                            </div>
+                                            <div class="mini-img">
+                                                <img src="/assets/image/shop/kreslo_3.jpg" style="width: 110px;" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="product-details-title">
+                                            <h3>Fashionable Bedspread</h3>
+                                            <div class="sku">
+                                                <span>
+                                                    SKU: N/A
+                                                </span>
+                                            </div>
+                                            <div class="category">
+                                                <span>
+                                                    Categories:
+                                                </span>
+                                                <a href="#">Featured</a>
+                                                ,
+                                                <a href="#">Chair</a>
+                                            </div>
+                                            <div class="review">
+                                                <span class="rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </span>
+                                                <a href="#">(3 customer reviews)</a>
+                                            </div>
+                                            <div class="desc">
+                                                <span>About the product</span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitrquis justo tempus
+                                                mollis sed et dui.
+                                            </p>
+                                            <div class="price mb-5">
+                                                <span>
+                                                    $10,000.00
+                                                </span>
+                                            </div>
+                                            <!-- <div class="stok mb-2">
+                                                <span>Yes in stock</span>
+                                            </div> -->
+                                            <div class="quantity mb-5">
+                                                <div class="qty-input">
+                                                    <button class="qty-count qty-count--minus" data-action="minus"
+                                                        type="button">-</button>
+                                                    <input class="product-qty" type="number" name="product-qty" min="0"
+                                                        max="10" value="1">
+                                                    <button class="qty-count qty-count--add" data-action="add"
+                                                        type="button">+</button>
+                                                </div>
+                                                <a href="cart.html" class="btn btn-default">Add To Cart</a>
+                                            </div>
+                                            <div class="share-icon">
+                                                <span class="feedback">
+                                                    The product is already in the wishlist!
+                                                    Browse Wishlist
+                                                </span>
+                                                <a href="wishlist.html">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="product-details-information">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product-review-info">
+                                <ul class="nav-desc ">
+                                    <li class="tab_one ">
+                                        <a id="1" class="btnclick active">description</a>
+                                    </li>
+                                    <li class="tab_one">
+                                        <a id="2" class="btnclick">reviews (1)</a>
+                                    </li>
+                                </ul>
+                                <div class="tab_body" id="1">
+                                    <div class="tab_contentt">
+                                        <div class="tab_desc">
+                                            <img class="alignnone size-full text-center"
+                                                src="https://demo.xpeedstudio.com/marketov2/furniture/wp-content/uploads/sites/11/2018/08/furnituredesc.jpg"
+                                                alt="" width="" height="&quot;" data-ll-status="loaded">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab_body" id="2">
+                                    <div class="tab_contentt starcon">
+                                        <div class="row starall">
+                                            <div class="col-md-6">
+                                                <div class="rate_detail">
+                                                    <ul class="rate_list">
+                                                        <li>5 Stars
+                                                            <span></span>
+                                                            <span class="stars d-flex">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li>4 Stars
+                                                            <span></span>
+                                                            <div class="stars d-flex">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </li>
+                                                        <li>3 Stars
+                                                            <span></span>
+                                                            <div class="stars d-flex">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </li>
+                                                        <li>2 Stars
+                                                            <span></span>
+                                                            <div class="stars d-flex">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </li>
+                                                        <li>1 Stars
+                                                            <span></span>
+                                                            <div class="stars d-flex">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 align-self-center">
+                                                <div class="rate_score">
+                                                    <div class="stars d-flex">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                    <p class="rating-des">Average Star Rating: <em>3.3 out of 5</em>
+                                                        (3 vote)
+                                                    </p>
+                                                    <span class="help-tip">
+                                                        <i class="fa-solid fa-question"></i>
+                                                        <span class="help-tip-text">If you finish the payment today,
+                                                            your order will arrive within the estimated delivery
+                                                            time.</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commet-section">
+                                        <h5 id="commet-title">3 reviews for Fashionable Bedspread
+                                        </h5>
+                                        <ul>
+                                            <div class="commet-img">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=60&amp;d=mm&amp;r=g"
+                                                    class="avatar avatar-60 photo lazyloaded" height="60" width="60"
+                                                    srcset="https://secure.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=120&amp;d=mm&amp;r=g 2x"
+                                                    data-ll-status="loaded">
+                                            </div>
+                                            <li>
+                                                <div class="commet-body">
+                                                    <div class="commet-date">
+                                                        <span class="stars d-flex">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                        Maria – June 7, 2013
+                                                    </div>
+                                                    <p>Can’t wait to start mixin’ with this one!
+                                                        Irba-irr-Up-up-up-up-date your theme!</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="review_form">
+                                        <div id="review_form">
+                                            <div id="respond" class="comment-respond">
+                                                <span id="reply-title" class="comment-title">Add a review
+                                                </span>
+                                                <form action="" method="post" id="commentform" class="comment-form">
+                                                    <p class="comment-notes">
+                                                        <span id="email-notes">Your email address will not be published.
+                                                            Required fields are marked*
+                                                        </span>
+                                                    </p>
+                                                    <p class="comment-form-inp">
+                                                        <label for="author">Name
+                                                            <span class="required">*</span>
+                                                        </label>
+                                                        <input id="author" name="author" type="text" value="" size="30"
+                                                            required="">
+                                                    </p>
+                                                    <p class="comment-form-email">
+                                                        <label for="email">Email
+                                                            <span class="required">*</span>
+                                                        </label>
+                                                        <input id="email" name="email" type="email" value="" size="30"
+                                                            required="">
+                                                    </p>
+                                                    <p class="comment-form-cookies">
+                                                        <input id="wp-comment-cookies-consent"
+                                                            name="wp-comment-cookies-consent" type="checkbox"
+                                                            value="yes"> <label for="wp-comment-cookies-consent">Save my
+                                                            name, email, and website in this browser for the next time I
+                                                            comment.
+                                                        </label>
+                                                    </p>
+                                                    <div class="comment-form-rating">
+                                                        <label for="rating">Your rating
+                                                            <span class="required">*</span>
+                                                        </label>
+                                                        <div class='rating-stars'>
+                                                            <ul id='stars'>
+                                                                <li class='star' title='Poor' data-value='1'>
+                                                                    <i class='fa fa-star fa-fw'></i>
+                                                                </li>
+                                                                <li class='star' title='Fair' data-value='2'>
+                                                                    <i class='fa fa-star fa-fw'></i>
+                                                                </li>
+                                                                <li class='star' title='Good' data-value='3'>
+                                                                    <i class='fa fa-star fa-fw'></i>
+                                                                </li>
+                                                                <li class='star' title='Excellent' data-value='4'>
+                                                                    <i class='fa fa-star fa-fw'></i>
+                                                                </li>
+                                                                <li class='star' title='WOW!!!' data-value='5'>
+                                                                    <i class='fa fa-star fa-fw'></i>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- <p class="stars-selected">
+                                                            <span class="stars d-flex">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </span>
+                                                        </p> -->
+                                                    </div>
+                                                    <p class="comment-form-comment">
+                                                        <label for="comment">Your review
+                                                            <span class="required">*</span>
+                                                        </label>
+                                                        <textarea id="comment" name="comment" cols="45" rows="8"
+                                                            required="">
+                                                        </textarea>
+                                                    </p>
+                                                    <p class="form-submit">
+                                                        <input name="submit" type="submit" id="submit" class="submit"
+                                                            value="Submit">
+                                                    </p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-arrivals">
+            <div class="container pt-5 pb-3">
+                <div class="content-header">
+                    <h2 class="content-title">Related products
+                    </h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="1" style="display: block;" class="arrival_content">
+                    <div class="row justify-content-center product-wrap g-2">
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-2.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories">
+                                        <a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi>
+                                                <span class="Price-currencySymbol">$</span>4,000.00</bdi>
+                                        </span>
+                                    </span>
+                                    <div class="hover-area text-center" id="text">
+                                        <a href="cart.html" type="button" class="add-to-cart">
+                                            <i class="fa-solid fa-basket-shopping">
+                                            </i> Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories"><a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi><span
+                                                    class="Price-currencySymbol">$</span>2,000.00</bdi></span>
+                                    </span>
+                                    <div class="hover-area clearfix" id="text">
+                                        <div class="addcart woocommerce text-center">
+                                            <a href="#" data-quantity="1"
+                                                class="button product_type_variable add-to-cart" data-product_id="2333"
+                                                data-product_sku="" aria-label="Select options for “Heavy Duty Antis”"
+                                                rel="nofollow"><i class="fa-solid fa-basket-shopping"></i> Select
+                                                options</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories"><a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi><span
+                                                    class="Price-currencySymbol">$</span>3,000.00</bdi></span>
+                                    </span>
+                                    <div class="hover-area clearfix" id="text">
+                                        <div class="addcart woocommerce text-center">
+                                            <a href="#" data-quantity="1"
+                                                class="button product_type_variable add-to-cart" data-product_id="2333"
+                                                data-product_sku="" aria-label="Select options for “Heavy Duty Antis”"
+                                                rel="nofollow"><i class="fa-solid fa-basket-shopping"></i> Select
+                                                options</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories"><a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi><span
+                                                    class="Price-currencySymbol">$</span>5,000.00</bdi></span>
+                                    </span>
+                                    <div class="hover-area clearfix" id="text">
+                                        <div class="addcart woocommerce text-center">
+                                            <a href="#" data-quantity="1"
+                                                class="button product_type_variable add-to-cart" data-product_id="2333"
+                                                data-product_sku="" aria-label="Select options for “Heavy Duty Antis”"
+                                                rel="nofollow"><i class="fa-solid fa-basket-shopping"></i> Select
+                                                options</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="new-arrivals">
+            <div class="container pt-5 pb-3">
+                <div class="content-header">
+                    <h2 class="content-title">Related products
+                    </h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="arrival_content">
+                    <div class="row justify-content-center product-wrap g-2">
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-2.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories">
+                                        <a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi>
+                                                <span class="Price-currencySymbol">$</span>4,000.00</bdi>
+                                        </span>
+                                    </span>
+                                    <div class="hover-area text-center" id="text">
+                                        <a href="cart.html" type="button" class="add-to-cart">
+                                            <i class="fa-solid fa-basket-shopping">
+                                            </i> Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories"><a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi><span
+                                                    class="Price-currencySymbol">$</span>2,000.00</bdi></span>
+                                    </span>
+                                    <div class="hover-area clearfix" id="text">
+                                        <div class="addcart woocommerce text-center">
+                                            <a href="#" data-quantity="1"
+                                                class="button product_type_variable add-to-cart" data-product_id="2333"
+                                                data-product_sku="" aria-label="Select options for “Heavy Duty Antis”"
+                                                rel="nofollow"><i class="fa-solid fa-basket-shopping"></i> Add to
+                                                cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories"><a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi><span
+                                                    class="Price-currencySymbol">$</span>3,000.00</bdi></span>
+                                    </span>
+                                    <div class="hover-area clearfix" id="text">
+                                        <div class="addcart woocommerce text-center">
+                                            <a href="#" data-quantity="1"
+                                                class="button product_type_variable add-to-cart" data-product_id="2333"
+                                                data-product_sku="" aria-label="Select options for “Heavy Duty Antis”"
+                                                rel="nofollow"><i class="fa-solid fa-basket-shopping"></i> Add to
+                                                cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 col-sm-6 col-md-4 boxs">
+                            <div class="card" id="demo">
+                                <img src="assets/image/chair/chair-6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <span class="product-categories"><a href="#">Innovative Furnitures</a>
+                                    </span>
+                                    <a class="product-title" href="#">Heavy Duty Antis</a>
+                                    <span class="price">
+                                        <span class="Price-amount amount"><bdi><span
+                                                    class="Price-currencySymbol">$</span>5,000.00</bdi></span>
+                                    </span>
+                                    <div class="hover-area clearfix" id="text">
+                                        <div class="addcart woocommerce text-center">
+                                            <a href="#" data-quantity="1"
+                                                class="button product_type_variable add-to-cart" data-product_id="2333"
+                                                data-product_sku="" aria-label="Select options for “Heavy Duty Antis”"
+                                                rel="nofollow"><i class="fa-solid fa-basket-shopping"></i> Add to
+                                                cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <!-- Main end -->
+
+    <!-- Footer start -->
+    <footer>
+        <section class="marketpress">
+            <div class="market-title">
+                <div class="market-img">
+                    <a href="">
+                        <img src="assets/image/footer logo/marketpress-logo.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="safe my-3">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-3">
+                        <div class="safe-content">
+                            <div class="safe-text">
+                                <h2 class="section-title">
+                                    Got Question? Call us 24/7
+                                </h2>
+                                <h3 class="section-subtitle">[80] 1017 197</h3>
+                                <div class="section-description">
+                                    <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                                </div>
+                            </div>
+                            <div class="btn-wraper">
+                                <a href="https://www.google.com/maps/@40.3996672,49.9449856,12z" target="_blank"
+                                    rel="nofollow" class="element-btn">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    View On Map
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="safe-content">
+                            <div class="safe-text">
+                                <h2 class="section-title">
+                                    We Using
+                                </h2>
+                                <h3 class="section-subtitle">Safe Payments</h3>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="assets/image/footer logo/skril-1.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img src="assets/image/footer logo/palypal-1.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img src="assets/image/footer logo/american_express-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="elementor-secure">
+                                    <h2>Secured by:</h2>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-lg-6">
+                                        <img src="assets/image/footer logo/norton_av_logo1.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/image/footer logo/mcAfee_logo1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="quick-links">
+                            <div class="link-title">
+                                <h4>Quick Links</h4>
+                            </div>
+                            <div class="link-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">Support Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Term & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shipping</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Products Return</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="quick-links">
+                            <div class="link-title">
+                                <h4>Our Stores</h4>
+                            </div>
+                            <div class="link-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">New York</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">London SF</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cockfosters BP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Los Angeles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Chicago</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Las Vegas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Albarto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <div class="text-copy">
+                            <h2>
+                                Copyrights By Xpeedstudio - 2023
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-payment">
+                            <h2>
+                                Allow payment base on
+                            </h2>
+                            <div class="row g-5 text-center custom">
+                                <div class="col-lg-3 hoverlg">
+                                    <img src="assets/image/footer logo/skril-1.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 hoverlg">
+                                    <img src="assets/image/footer logo/palypal-1.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 hoverlg">
+                                    <img src="assets/image/footer logo/american_express-1.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 hoverlg">
+                                    <img src="assets/image/footer logo/amazon1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scroltop">
+            <div class="scroll">
+                <a href="#" class="back-to-top btn g-5 m-5">
+                    Back top
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer end -->
+</body>
+<!--  jquery cdn start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<!--  jquery cdn end -->
+<!--  Bootstarp cdn js start -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<!--  Bootstarp cdn js end -->
+<!-- slick slider js start -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- slick slider js end -->
+<!-- Aos js strat cdn -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Aos js end cdn -->
+<!-- <script src="assets/js/shop.js"></script> -->
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/shop.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
